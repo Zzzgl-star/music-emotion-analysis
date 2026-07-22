@@ -49,17 +49,28 @@
 | BERT+CNN-LSTM | 约0.78 | 小数据集上效果一般 |
 
 
-## 快速开始
+## 使用说明
 
-环境配置：
+### 环境准备
+
+Python 3.8 或以上版本，运行：
+
 ```bash
 pip install -r requirements.txt
 ```
 
-运行推荐系统：
-```bash
-python src/7_recommendation_system.py
-```
+### 文件说明
+
+| 文件 | 功能 |
+|------|------|
+| 01_data_collection.py | 拉取Spotify音频数据 |
+| 02_lyrics_processor.py | 清洗中文歌词，提取特征 |
+| 03_ensemble_learning.py | 训练集成学习模型 |
+| 04_balanced_solution.py | SMOTE处理不平衡，重新训练 |
+| 05_bert_cnn_lstm.py | 深度学习模型训练 |
+| 07_model_fusion.py | 歌词模型和音频模型融合 |
+| 08_comparison.py | 传统方法和深度学习对比 |
+| 09_recommendation_system.py | 启动Flask推荐系统 |
 
 
 ## 项目结构
@@ -68,7 +79,7 @@ python src/7_recommendation_system.py
 ├── src/                  # 源代码
 ├── data/                 # 数据集
 ├── models/               # 训练好的模型
-├── outputs/              # 结果图表
+├── outputs/ 
 └── README.md
 ```
 
@@ -92,8 +103,3 @@ python src/7_recommendation_system.py
 ## 作者
 
 王明珠 - 昆明理工大学 数据科学与大数据技术 2023级
-
-
-## 许可证
-
-MIT
