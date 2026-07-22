@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# 数据文件（如果太大）
+*.csv
+*.pkl
+*.joblib
+
+# 模型文件（如果太大）
+models/*.pkl
+models/*.joblib
+
+# 输出文件
+outputs/*.png
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
